@@ -1,3 +1,4 @@
+# partida de paciência
 import random
 
 # Crie um baralho de cartas
