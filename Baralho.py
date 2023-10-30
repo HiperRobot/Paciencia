@@ -8,8 +8,7 @@ def criar_baralho():
     return baralho
 
 
-a= criar_baralho()
-print(a)
+
 
 def contaCartas(baralho):
   print(len(baralho))
