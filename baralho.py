@@ -8,18 +8,20 @@ def criar_baralho():
     return baralho
 
 
+a= criar_baralho()
+print(a)
 
-
-def conta_cartas(baralho):
+def contaCartas(baralho):
   print(len(baralho))
+  return len(baralho)
 
 
 
-def embaralha_cartas(baralho):
+def embaralhaCartas(baralho):
   novobaralho= random.shuffle(baralho)
   return novobaralho
 
-def compra_carta(tabuleiro, baralho):
+def compraCarta(tabuleiro, baralho):
   for slot in tabuleiro:
       
       if not baralho:
@@ -31,6 +33,10 @@ def compra_carta(tabuleiro, baralho):
       slot.append(carta)
      
       carta[-1] = True
+
+
+
+
 
 
 
