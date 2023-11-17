@@ -50,7 +50,7 @@ def criaMenu(vitoria):
 
 def main():
     while True:
-        vitoria = partida.IniciaJogo()
+        vitoria = partida.inicia_jogo()
         jogar_de_novo = criaMenu(vitoria)
         if not jogar_de_novo:
             break
