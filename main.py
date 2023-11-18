@@ -43,15 +43,16 @@
 
 import partida
 
-def criaMenu(vitoria):
+
+def criaMenu(status):  #status pode ser vitoria(True) ou derrota(False)
     # Implemente a lógica para criar o menu aqui
     # Retorne True se o jogador quiser jogar de novo, False caso contrário
     pass
 
 def main():
     while True:
-        vitoria = partida.inicia_jogo()
-        jogar_de_novo = criaMenu(vitoria)
+        status = partida.inicia_jogo()
+        jogar_de_novo = criaMenu(status)
         if not jogar_de_novo:
             break
 
