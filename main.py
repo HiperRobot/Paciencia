@@ -3,7 +3,7 @@ import pygame
 import sys
 import os
 
-def criaMenu(status):
+def cria_menu(status):
     pygame.init()
 
     # Configurações da tela
@@ -88,7 +88,7 @@ def criaMenu(status):
 def main():
     while True:
         status = partida.inicia_jogo()
-        jogar_de_novo = criaMenu(status)
+        jogar_de_novo = cria_menu(status)
         if not jogar_de_novo:
             break
 
