@@ -89,11 +89,6 @@ def mostra_tabuleiro():
                 elif 4 <= i < 10 and j < 4:
                     tela.blit(imagem_carta, matriz_cartas_pilhas[i][j].topleft)
 
-
-
-
-
-
         # Atualiza a tela
         pygame.display.flip()
 

@@ -175,11 +175,12 @@
 
 # IniciaJogo()
 
+import tabuleiro
 
 def inicia_jogo():
     # Inicializa o jogo
     # Coloca as cartas iniciais nos slots do tabuleiro
-    # ...
+    tabuleiro.mostra_tabuleiro()
 
     while True:
         # Dá a opção do jogador fazer uma de suas duas jogadas possíveis
@@ -205,6 +206,6 @@ def mover_carta():
 def consulta_regras():
     # Controla o que acontece no jogo de acordo com as Regras do paciência Spider
     # ...
-    pass
+    return False  # Retorna True se o jogador ganhou e False se o jogador perdeu
 
 
