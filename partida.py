@@ -176,11 +176,20 @@
 # IniciaJogo()
 
 import tabuleiro
+import baralho
 
 def inicia_jogo():
     # Inicializa o jogo
+
+    # Cria o bolo de cartas dos 2 baralhos (104 cartas)
+    baralho1 = baralho.criar_baralho()
+    baralho2 = baralho.criar_baralho()
+    bolo_de_cartas = baralho1 + baralho2  # Concatena as duas listas
+    baralho.embaralha_cartas(bolo_de_cartas)
+    # print(baralho)
+
     # Coloca as cartas iniciais nos slots do tabuleiro
-    tabuleiro.mostra_tabuleiro()
+    tabuleiro.mostra_tabuleiro(bolo_de_cartas)
 
     while True:
         # Dá a opção do jogador fazer uma de suas duas jogadas possíveis
@@ -207,5 +216,6 @@ def consulta_regras():
     # Controla o que acontece no jogo de acordo com as Regras do paciência Spider
     # ...
     return False  # Retorna True se o jogador ganhou e False se o jogador perdeu
+
 
 
